@@ -1,0 +1,47 @@
+# Ignore environment variable files
+.env
+
+# Ignore PostgreSQL data volume (if using bind mounts)
+postgres_data/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore Docker artifacts
+.dockerignore
+docker-compose.override.yml
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# Ignore Node.js dependencies (if applicable)
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Ignore virtual environments
+venv/
+.envrc
+.venv/
+
+# Ignore compiled code
+dist/
+build/
+
+# Ignore coverage reports
+coverage/
+*.cover
+*.lcov
