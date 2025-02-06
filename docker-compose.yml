@@ -7,6 +7,7 @@ services:
       - "${POSTGRES_PORT}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./scripts:/docker-entrypoint-initdb.d
     networks:
       - mynetwork
     healthcheck:
@@ -17,7 +18,7 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin
+    container_name: pgadminn
     env_file: .env
     ports:
       - "${PGADMIN_PORT}:80"
